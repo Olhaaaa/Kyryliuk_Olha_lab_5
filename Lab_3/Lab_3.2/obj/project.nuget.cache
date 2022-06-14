@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ltwE2UeR/U1oKLsltHlosntM3s7ccvcnUoiBbVw2nxg1FxxGAzNzdBwR38upd3bj7ZjxolHiiwnxH0TbnC9cwQ==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio.term2\\Lab_3\\Lab_3.2\\Lab_3.2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Olya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

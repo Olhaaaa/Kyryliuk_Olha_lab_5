@@ -8,63 +8,63 @@ namespace Lab_4
     class Depo
     {
        
-        public List < Transport> transport = new List< Transport>();
+        public Dictionary<string, Transport> transport = new Dictionary<string, Transport>();
 
         public void Add( string name, double speed, double cost)
         {
             if(name=="train")
             {
-                transport.Add(new Train(speed, cost));
+                transport.Add("train",new Train(speed, cost));
             }
             else if (name =="airplane")
             {
-                transport.Add(new Airplane(speed, cost));
+                transport.Add("airplane",new Airplane(speed, cost));
             }
             else if (name=="car")
             {
-                transport.Add(new Car(speed, cost));
+                transport.Add("car",new Car(speed, cost));
             }
             else if (name =="bus")
             {
-                transport.Add(new Bus (speed, cost));
+                transport.Add("bus",new Bus (speed, cost));
             }
             else
             {
-                transport.Add(new Helicopter(speed, cost));
+                transport.Add("helicopter",new Helicopter(speed, cost));
             }
         }
 
-        public void Choose( )
+        public void Choose()
         {
             Console.WriteLine("Оберіть вид транспорту: ");
             string choose = Console.ReadLine();
             switch (choose)
             {
                 case "train":
-                    transport[0].Length();
-                    transport[0].Price();
-                    transport[0].Time();
+                    transport["train"].Length();
+                    transport["train"].Price();
+                    transport["train"].Time();
                     break;
 
                 case "bus":
-                    transport[1].Length();
-                    transport[1].Price();
-                    transport[1].Time();
+                    transport["bus"].Length();
+                    transport["bus"].Price();
+                    transport["bus"].Time();
                     break;
                 case "car":
-                    transport[3].Length();
-                    transport[3].Price();
-                    transport[3].Time();
+                    transport["car"].Length();
+                    transport["car"].Price();
+                    transport["car"].Time();
                     break;
                 case "airplane":
-                    transport[4].Length();
-                    transport[4].Price();
-                    transport[4].Time();
+                    transport["airplane"].Length();
+                    transport["airplane"].Price();
+                    transport["airplane"].Time();
                     break;
                 case "helicopter":
-                    transport[2].Length();
-                    transport[2].Price();
-                    transport[2].Time();
+                    transport["helicopter"].Length();
+                    transport["helicopter"].Price();
+                    transport["helicopter"].Time();
                     break;
 
             }
